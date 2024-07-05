@@ -27,7 +27,7 @@ Esta API tem como objetivo extrair os dados de qualquer nota fiscal de serviço 
 
 4. Adicione saldo no projeto em [https://platform.openai.com/settings/organization/billing/overview](https://platform.openai.com/settings/organization/billing/overview).
 
-5. Habilite o GPT-4o em `Project > Limits > Model Usage > Allow or Block Models`.
+5. Habilite o GPT-4.0 em `Project > Limits > Model Usage -> Allow or Block Models`.
 
 6. Instale as dependências:
     ```sh
@@ -36,12 +36,12 @@ Esta API tem como objetivo extrair os dados de qualquer nota fiscal de serviço 
 
 ## Uso
 
-Após iniciar o Docker Compose, a API estará disponível em `http://localhost:5000`. Você pode fazer requisições para os endpoints disponíveis para extrair dados de notas fiscais de serviço.
+Após iniciar o Docker Compose, a API estará disponível em `http://localhost:5100`. Você pode fazer requisições para os endpoints disponíveis para extrair dados de notas fiscais de serviço.
 
-## Licença
+### Exemplo de Requisição
 
-Este projeto está licenciado sob a Licença GPL.
+Para extrair dados de uma nota fiscal de serviço, você pode usar o seguinte comando `curl`:
 
-## Versão
-
-1.0
+```sh
+curl --location 'http://localhost:5100/extract-data' \
+--form 'payload=@"/Users/danielalbuquerque/Desktop/Screenshot 2024-07-05 at 19.49.30.png"'

@@ -40,7 +40,7 @@ Após iniciar o Docker Compose, a API estará disponível em `http://localhost:5
 
 ### Exemplo de Requisição
 
-Para extrair dados de uma nota fiscal de serviço, você pode usar o seguinte comando `curl`:
+Para extrair dados de uma nota fiscal de serviço, você pode usar o seguinte comando `curl` ou importar o comando no postman em file > import:
 
 ```sh
 curl --location 'http://localhost:5100/extract-data' \

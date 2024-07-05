@@ -1,4 +1,4 @@
-# Flask API para Extração de Dados de Notas Fiscais de Serviço
+# API para Extração de Dados de Notas Fiscais de Serviço
 
 ## Descrição
 
@@ -13,8 +13,8 @@ Esta API tem como objetivo extrair os dados de qualquer nota fiscal de serviço 
 
 1. Clone este repositório:
     ```sh
-    git clone <URL_DO_REPOSITORIO>
-    cd <NOME_DO_REPOSITORIO>
+    git clone [<URL_DO_REPOSITORIO>](https://github.com/danielAlbuquerque/nfse-ocr-extractor-gpt)
+    cd nfse-ocr-extractor-gpt
     ```
 
 2. Copie o arquivo `env-example` para `.env` e preencha a variável `OPENAI_API_KEY`:

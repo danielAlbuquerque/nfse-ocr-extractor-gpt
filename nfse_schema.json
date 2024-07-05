@@ -1,0 +1,112 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "municipio": {
+      "type": "string"
+    },
+    "numero_da_nota": {
+      "type": "string"
+    },
+    "data_e_hora_de_emissao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "codigo_de_verificacao": {
+      "type": "string"
+    },
+    "codigo_do_servico": {
+      "type": "string"
+    },
+    "base_de_calculo": {
+      "type": "string"
+    },
+    "aliquota": {
+      "type": "string"
+    },
+    "valor_do_iss": {
+      "type": "string"
+    },
+    "credito": {
+      "type": "string"
+    },
+    "outras_informacoes": {
+      "type": "string"
+    },
+    "valor_total_do_servico": {
+      "type": "string"
+    },
+    "discriminacao_dos_servicos": {
+      "type": "string"
+    },
+    "prestador_de_servicos": {
+      "type": "object",
+      "properties": {
+        "cpf_cnpj": {
+          "type": "string"
+        },
+        "nome_razao_social": {
+          "type": "string"
+        },
+        "endereco": {
+          "type": "string"
+        },
+        "cep": {
+          "type": "string"
+        },
+        "municipio": {
+          "type": "string"
+        },
+        "uf": {
+          "type": "string"
+        },
+        "inscricao_municipal": {
+          "type": "string"
+        }
+      }
+    },
+    "deducoes": {
+      "type": "object",
+      "properties": {
+        "inss": {
+          "type": "string"
+        },
+        "irrf": {
+          "type": "string"
+        },
+        "csll": {
+          "type": "string"
+        },
+        "cofins": {
+          "type": "string"
+        },
+        "pis_pasep": {
+          "type": "string"
+        }
+      }
+    },
+    "tomador_de_servicos": {
+      "type": "object",
+      "properties": {
+        "nome_razao_social": {
+          "type": "string"
+        },
+        "cpf_cnpj": {
+          "type": "string"
+        },
+        "endereco": {
+          "type": "string"
+        },
+        "cep": {
+          "type": "string"
+        },
+        "municipio": {
+          "type": "string"
+        },
+        "uf": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

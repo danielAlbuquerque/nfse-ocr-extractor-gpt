@@ -13,7 +13,7 @@ Esta API tem como objetivo extrair os dados de qualquer nota fiscal de serviço 
 
 1. Clone este repositório:
     ```sh
-    git clone [<URL_DO_REPOSITORIO>](https://github.com/danielAlbuquerque/nfse-ocr-extractor-gpt)
+    git clone https://github.com/danielAlbuquerque/nfse-ocr-extractor-gpt.git
     cd nfse-ocr-extractor-gpt
     ```
 

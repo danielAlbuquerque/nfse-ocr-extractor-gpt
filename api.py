@@ -28,9 +28,9 @@ def load_json_schema(schema_file: str) -> dict:
         return json.load(file)
 
 @app.route('/extract-data', methods=['POST'])
-def process_pdf():
+def extract():
     print('Iniciando processamento')
-    file = request.files['pdf']
+    file = request.files['payload']
     if file:
         file_path = os.path.join('/tmp', file.filename)
         file.save(file_path)
@@ -51,8 +51,6 @@ def process_pdf():
         print(file_url)
         print('Enviando para o chatgpt')
 
-        pass
-        
         response = client.chat.completions.create(
             model='gpt-4o',
             response_format={"type": "json_object"},

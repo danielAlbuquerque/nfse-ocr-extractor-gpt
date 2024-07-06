@@ -27,7 +27,7 @@ Esta API tem como objetivo extrair os dados de qualquer nota fiscal de serviço 
 
 4. Adicione saldo no projeto em [https://platform.openai.com/settings/organization/billing/overview](https://platform.openai.com/settings/organization/billing/overview).
 
-5. Habilite o GPT-4.0 em `Project > Limits > Model Usage -> Allow or Block Models`.
+5. Habilite o GPT-4o em `Project > Limits > Model Usage > Allow or Block Models`.
 
 6. Instale as dependências:
     ```sh
